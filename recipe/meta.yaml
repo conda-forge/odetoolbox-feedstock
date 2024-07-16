@@ -1,5 +1,5 @@
 {% set name = "odetoolbox" %}
-{% set version = "2.5.5" %}
+{% set version = "2.5.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/nest/ode-toolbox/archive/v{{ version }}.tar.gz
-  sha256: f197400bf95d8abd86ed41a31898d7dc9fda6340facb1af9d96e8fda83e7c17e
+  sha256: d86cd411097299416ade5fd9cbc0a07f4be6c2c8514c2f1659c3b7ff08fff897
 
 build:
   noarch: python
@@ -17,11 +17,11 @@ build:
 
 requirements:
   host:
-    - python >=3 
+    - python >=3
     - pytest-runner
     - pip
   run:
-    - python >=3 
+    - python >=3
     - sympy >1.5,!=1.6rc1,!=1.6rc2,!=1.6,!=1.10,!=1.10.*
     - numpy >=1.8.2
     - scipy
@@ -38,7 +38,7 @@ test:
 
 about:
   home: https://github.com/nest/ode-toolbox
-  summary: 'ODE-toolbox: Automatic selection and generation of integration schemes' 
+  summary: 'ODE-toolbox: Automatic selection and generation of integration schemes'
   description: |
     Automatic selection and generation of integration schemes for systems of 
     ordinary differential equations.
