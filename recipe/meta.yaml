@@ -1,5 +1,5 @@
 {% set name = "odetoolbox" %}
-{% set version = "2.5.6" %}
+{% set version = "2.5.7" %}
 
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://github.com/nest/ode-toolbox/archive/v{{ version }}.tar.gz
-  sha256: d86cd411097299416ade5fd9cbc0a07f4be6c2c8514c2f1659c3b7ff08fff897
+  sha256: e0a346d6b7ab6eff989e0d53c4ec2f2e4c5bbc4d6ddeee2a4947ef0e7c34f814
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
@@ -20,6 +20,7 @@ requirements:
     - python {{ python_min }}
     - pytest-runner
     - pip
+    - setuptools
   run:
     - python >={{ python_min }}
     - sympy >1.5,!=1.6rc1,!=1.6rc2,!=1.6,!=1.10,!=1.10.*
