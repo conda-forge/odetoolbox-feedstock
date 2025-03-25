@@ -20,6 +20,7 @@ requirements:
     - python {{ python_min }}
     - pytest-runner
     - pip
+    - setuptools
   run:
     - python >={{ python_min }}
     - sympy >1.5,!=1.6rc1,!=1.6rc2,!=1.6,!=1.10,!=1.10.*
