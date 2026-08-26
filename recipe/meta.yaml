@@ -1,5 +1,5 @@
 {% set name = "odetoolbox" %}
-{% set version = "2.5.12" %}
+{% set version = "3.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/nest/ode-toolbox/archive/v{{ version }}.tar.gz
-  sha256: d42042b503f39af2ffa008620eb056cbb589934144edbfb879c16f2beb41616d
+  sha256: c11b48476fba11d9872ed2599f3abb9ac12f4258e2406e03127702a68ae763d5
 
 build:
   noarch: python
